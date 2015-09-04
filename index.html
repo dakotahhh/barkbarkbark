@@ -4,27 +4,20 @@
 	<title>BarkBarkBark</title>
 	<script>
 		function play(audio){
-			if(audio == "chihuahua"){
-				document.getElementById("dummy").innerHTML = 
-				 "<embed src=\""+"audio/chihuahua.mp3"+"\" hidden=\"true\" autostart=\"false\" loop=\"false\" />";
-			}else if(audio == "goldenlab"){
-				document.getElementById("dummy").innerHTML = 
-				 "<embed src=\""+"audio/goldenlab.mp3"+"\" hidden=\"true\" autostart=\"false\" loop=\"false\" />";
-			}else if(audio == "pitbull"){
-				document.getElementById("dummy").innerHTML = 
-				 "<embed src=\""+"audio/pitbull.mp3"+"\" hidden=\"true\" autostart=\"false\" loop=\"false\" />";
-			}else{
-				alert("not here");
-			}
+			document.getElementById("dummy").innerHTML = 
+				 "<embed src=\""+"audio/"+audio+".mp3"+"\" hidden=\"true\" autostart=\"false\" loop=\"false\" />";
 		}
 	</script>
 </head>
 <body>
 	<div>
 		<span id="dummy"></span>
-		<a href="javascript: void(0);" onclick="play('chihuahua')"><img src="images/chihuahua.gif" /></a>
+		<img src="images/chihuahua.gif" onclick="play('chihuahua')"/>
 		<img src="images/goldenlab.gif" onclick="play('goldenlab')"/>
 		<img src="images/pitbull.gif" onclick="play('pitbull')"/>
+		<img src="images/bassethound.gif" onclick="play('bassethound')"/>
+		<img src="images/poodle.gif" onclick="play('poodle')"/>
+		<img src="images/rottweiler.gif" onclick="play('rottweiler')"/>
 	</div>
 </body>
 </html>
